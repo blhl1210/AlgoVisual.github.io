@@ -1,0 +1,39 @@
+body{
+    background-color: #b3e6ff;
+}
+article {
+  margin-left: 170px;
+  border-left: 1px solid gray;
+  padding: 1em;
+  overflow: hidden;
+}
+nav {
+  float: left;
+  max-width: 690px;
+  margin: 0;
+  padding: 1em;
+}
+.form-input{
+  margin: 0 auto;
+  padding-left: 200px;
+  padding-top: 30px;
+}
+@media all and (max-width: 1200px) { /* screen size until 1200px */
+  body {
+    font-size: 1.5em; /* 1.5x default size */
+  }
+}
+@media all and (max-width: 1000px) { /* screen size until 1000px */
+  body {
+    font-size: 1.2em; /* 1.2x default size */
+  }
+}
+@media all and (max-width: 500px) { /* screen size until 500px */
+  body {
+    font-size: 0.8em; /* 0.8x default size */
+  }
+}
+#submit{
+  margin-left: 100px;
+  text-align: center;
+}
