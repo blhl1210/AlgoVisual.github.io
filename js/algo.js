@@ -57,7 +57,7 @@ function result() {
     while (res < size) {
         numColor++;
         for (var i = 0; i < size; i++)
-            if (listCircle[level[i]].c.localeCompare('black') === 0) {
+            if (listCircle[level[i]].c.localeCompare('white') === 0) {
                 var check = true;
                 for (var j = i - 1; j >= 0; j--)
                     if ((listCircle[level[j]].c.localeCompare(colors[numColor]) === 0) && (connects[level[i]][level[j]] === 1 || connects[level[j]][level[i]] === 1)) {
@@ -96,7 +96,7 @@ function getPosition(event) {
         x: x,
         y: y,
         r: 13,
-        c: 'black',
+        c: 'white',
         index: size
     }
     listCircle[size] = myCircle;
@@ -111,7 +111,7 @@ function drawCircle(myCircle) {
     ctx.fillStyle = myCircle.c;
     ctx.fill();
     ctx.stroke();
-    ctx.fillStyle = "white";
+    ctx.fillStyle = "black";
     ctx.fillText(myCircle.index.toString(), myCircle.x - 4, myCircle.y + 2);
 }
 
